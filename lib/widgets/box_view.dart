@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:split_bill/consts/colors_consts.dart';
 
 class BoxView extends StatelessWidget {
   final double height;
@@ -24,18 +23,14 @@ class BoxView extends StatelessWidget {
                   height: 0,
                 ),
               )),
-          Column(
+          Container(
+              child: Column(
             children: <Widget>[],
-          )
+          ))
         ],
       ),
-      decoration: BoxDecoration(boxShadow: [
-        BoxShadow(
-          color: ColorsApp.SHADOW_COLOR,
-            blurRadius: 20,
-            spreadRadius: 0,
-            offset: Offset(0, 20))
-      ], borderRadius: BorderRadius.circular(10), color: color),
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(10), color: color),
       height: height,
     );
   }
