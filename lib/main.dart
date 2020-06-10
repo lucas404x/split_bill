@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:split_bill/app/app_widget.dart';
+import 'package:split_bill/pages/home_page.dart';
 
 void main() {
-  runApp(AppWidget());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Home(),
+    title: "Split bill",
+  ));
 }
