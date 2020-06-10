@@ -16,10 +16,18 @@ class Home extends StatelessWidget {
             SizedBox(
               height: 35,
             ),
-            BoxView(
-              height: 160,
-              color: ColorsApp.VIEW_COLOR,
-            ),
+            Container(
+                child: BoxView(
+                  height: 160,
+                  color: ColorsApp.VIEW_COLOR,
+                ),
+                decoration: BoxDecoration(boxShadow: [
+                  BoxShadow(
+                      color: ColorsApp.SHADOW_COLOR,
+                      blurRadius: 20,
+                      spreadRadius: 0,
+                      offset: Offset(0, 20))
+                ]))
           ],
         ),
       ),
